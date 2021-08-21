@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+    <script>
+      function transforma(valorEntrada) {
+  var elementoSalida = document.getElementById('salida')
+  var valorSalida = ''
+  valorEntrada.split(' ').forEach( palabra => {
+    var letraInicial = palabra.substring(0,1)
+    valorSalida = valorSalida + letraInicial
+  })
+    
+  elementoSalida.value = valorSalida
+}
+    </script>
+  </head>
+  <body>
+  Input: <input id='entrada' type='text' name='saludo' >
+<button id='enviar' onclick='transforma(entrada.value)'> >> </button>
+Output:
+<input id='salida'/>
+  </body>
+</html>
