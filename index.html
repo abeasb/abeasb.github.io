@@ -27,6 +27,9 @@ textarea {
     
   elementoSalida.value = valorSalida
 }
+function eraseText() {
+    document.getElementById('entrada').value = "";
+}
     </script>
   </head>
   <body>
@@ -38,5 +41,6 @@ Input:
 <button id='enviar' onclick='transforma(entrada.value)'> >> </button>
 Output:
   <textarea id='salida'></textarea>
+<button id='reset' onclick='eraseText()'> Clear </button>
   </body>
 </html>
